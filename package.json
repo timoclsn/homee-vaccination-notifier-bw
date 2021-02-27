@@ -1,0 +1,19 @@
+{
+  "name": "homee-vaccination-notifier-bw",
+  "version": "1.0.0",
+  "description": "Find your covid vaccination appointments in BW.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Timo Clasen",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.2.1"
+  },
+  "dependencies": {
+    "playwright": "^1.9.1",
+    "node-fetch": "^2.6.1"
+  },
+  "type": "module"
+}
