@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 const homeeId = process.env.HOMEE_ID;
 const homeeWebhookKey = process.env.HOMEE_WEBHOOK_KEY;
 
-const plz = 68163; // Vaccination center plz
+const plz = 73730; // Vaccination center plz
 const interval = 60000; // Retry interval
 
 const vaccinationAppointmentUrl = `https://229-iz.impfterminservice.de/impftermine/service?plz=${plz}`;
