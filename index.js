@@ -5,7 +5,7 @@ const homeeId = process.env.HOMEE_ID;
 const homeeWebhookKey = process.env.HOMEE_WEBHOOK_KEY;
 
 const plz = 73730; // Vaccination center plz
-const interval = 60000; // Retry interval
+const interval = 5 * 60 * 1000; // Retry interval
 
 const vaccinationAppointmentUrl = `https://229-iz.impfterminservice.de/impftermine/service?plz=${plz}`;
 const sucessWebhook = `https://${homeeId}.hom.ee/api/v2/webhook_trigger?webhooks_key=${homeeWebhookKey}&event=vaccine`;
