@@ -1,10 +1,13 @@
 import { chromium } from "playwright";
 import fetch from "node-fetch";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const homeeId = process.env.HOMEE_ID;
 const homeeWebhookKey = process.env.HOMEE_WEBHOOK_KEY;
+const plz = process.env.PLZ;
 
-const plz = 73730; // Vaccination center plz
 const interval = 5 * 60 * 1000; // Retry interval
 
 const vaccinationAppointmentUrl = `https://229-iz.impfterminservice.de/impftermine/service?plz=${plz}`;

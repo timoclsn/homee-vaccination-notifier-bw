@@ -12,8 +12,9 @@
     "prettier": "2.2.1"
   },
   "dependencies": {
-    "playwright": "^1.9.1",
-    "node-fetch": "^2.6.1"
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1",
+    "playwright": "^1.9.1"
   },
   "type": "module"
 }
