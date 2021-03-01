@@ -11,7 +11,7 @@ const plz = process.env.PLZ;
 const interval = 5 * 60 * 1000; // Retry interval
 
 const vaccinationAppointmentUrl = `https://229-iz.impfterminservice.de/impftermine/service?plz=${plz}`;
-const sucessWebhook = `https://${homeeId}.hom.ee/api/v2/webhook_trigger?webhooks_key=${homeeWebhookKey}&event=vaccine`;
+const sucessWebhook = `https://${homeeId}.hom.ee/api/v2/webhook_trigger?webhooks_key=${homeeWebhookKey}&event=homee-vaccination-notifier-bw`;
 const errorText = '"Es wurden keine freien Termine in Ihrer Region gefunden"';
 
 const browser = await chromium.launch({ headless: false });
