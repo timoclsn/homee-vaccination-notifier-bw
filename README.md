@@ -6,7 +6,12 @@ Get a notification from your homee if there are covid vaccination appointments i
 
 - Add homeegram with webhook trigger ('homee-vaccination-notifier-bw') and push notification action
 - Add homee ID to `.env`
-- Add homee webhook key `.env`
-- Adapt PLZ in script if needed
+- Add homee webhook key to `.env`
+- Adapt PLZ `.env`
 - `npm install`
-- `node index.js`
+- `node code.js` or `node appointment.js`
+
+## Scripts
+
+- `code.js` ist used to get a "Vermittlungscode"
+- `node appointment.js` is used to check for appointments if you have a "Vermittlungscode"
