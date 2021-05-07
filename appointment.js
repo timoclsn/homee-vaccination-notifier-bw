@@ -26,7 +26,7 @@ await page.goto(vaccinationAppointmentUrl);
 while (true) {
   console.log(`⏱ Try no.: ${count}`);
 
-  await page.click("button[_ngcontent-nfa-c124]");
+  await page.click("button[_ngcontent-nfa-c126]");
 
   await waitFor(2000);
 
@@ -51,7 +51,7 @@ while (true) {
 
   await waitFor(2000);
 
-  await page.click("button[_ngcontent-nfa-c123]");
+  await page.click("button[_ngcontent-nfa-c125]");
 
   count = count + 1;
   await waitFor(interval);
